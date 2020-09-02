@@ -1,0 +1,44 @@
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .header{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 11vh;
+            color: white;
+            flex-direction: column;
+            background-color: rgba(0,0,0,.5);
+            cursor: pointer;
+        }
+
+        .header .logo{
+            padding-top: .6rem;
+            font-size: 2rem;
+            font-family: logoFont;
+            color: orange;
+        }
+
+        .header .minLogo{
+            font-family: sans-serif;
+            font-size: .9rem;
+        }
+
+        @media only screen and (max-width: 600px){
+            .header .logo{
+                font-size: 1.6rem;
+                padding: 0;
+            }
+        }
+    </style>
+    <header class="header" onclick="window.location.href='../home/home.php'">
+        <div class="logo">SAI SWASTHYAM</div>
+        <div class="minLogo">FITNESS CENTER</div>
+    </header>
+
